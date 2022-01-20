@@ -41,5 +41,10 @@ namespace PersonsFormUI
 
             UpdateBinding();
         }
+
+        private void listBoxInfoFound_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

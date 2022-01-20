@@ -14,7 +14,7 @@ namespace PersonsFormUI.Classes
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("PersonInfo")))
             {
-                return connection.Query<Person>($"select * from Person where LastName = '{ lastName }'").ToList();
+                return connection.Query<Person>("dbo.spPeople_GetInfo @LastName", new { LastName = lastName }).ToList();
             }
         }
     }

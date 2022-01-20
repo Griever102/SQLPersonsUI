@@ -75,6 +75,7 @@ namespace PersonsFormUI
             this.listBoxInfoFound.Name = "listBoxInfoFound";
             this.listBoxInfoFound.Size = new System.Drawing.Size(321, 424);
             this.listBoxInfoFound.TabIndex = 2;
+            this.listBoxInfoFound.SelectedIndexChanged += new System.EventHandler(this.listBoxInfoFound_SelectedIndexChanged);
             // 
             // btnSearchByLastName
             // 

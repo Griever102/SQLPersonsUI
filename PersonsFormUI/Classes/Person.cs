@@ -17,8 +17,8 @@ namespace PersonsFormUI
         {
             get 
             {
-                    // FirstName LastName (EmailAddress)
-                return $"{ FirstName } { LastName } ({ EmailAddress })";
+                    // FirstName LastName
+                return $"{ FirstName } { LastName }";
             }
         }
 

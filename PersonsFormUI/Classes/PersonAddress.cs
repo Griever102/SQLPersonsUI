@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PersonsFormUI
 {
-    class PersonAddress
+    public class PersonAddress
     {
         public int ID { get; set; }
         public int PersonID { get; set; }
@@ -14,5 +14,13 @@ namespace PersonsFormUI
         public string City { get; set; }
         public string State { get; set; }
         public string ZipCode { get; set; }
+
+        public string FullInfo
+        {
+            get
+            {
+                return $"{ Address } { City } { State } { ZipCode }";
+            }
+        }
     }
 }
