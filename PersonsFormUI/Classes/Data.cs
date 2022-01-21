@@ -13,7 +13,7 @@ namespace PersonsFormUI
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
 
-        public string FullInfo
+        public string FullData
         {
             get
             {

@@ -25,7 +25,9 @@ namespace PersonsFormUI
         private void UpdateBinding()
         {
             listBoxInfoFound.DataSource = people;
-            listBoxInfoFound.DisplayMember = "FullInfo";
+            listBoxInfoFound.DisplayMember = "FullPerson";
+            //listBoxInfoFound.DisplayMember = "FullData";
+            //listBoxInfoFound.DisplayMember = "FullPersonAddress";
         }
 
         private void Form1_Load(object sender, EventArgs e)
